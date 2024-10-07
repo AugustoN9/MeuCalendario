@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário Mensal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Calendário Mensal</h1>
+
+      <label for="year">Selecione o ano:</label>
+      <input type="number" id="year" value="2024" />
+
+      <div id="navigation">
+        <img id="prevMonth" src="./icons/retrocede.png" width="70" />
+        <h2 id="monthTitle"></h2>
+        <img id="nextMonth" src="./icons/avanca.png" width="70" />
+      </div>
+
+      <div id="calendar"></div>
+
+      <div id="info">
+        <h3>Feriados:</h3>
+        <ul id="feriados"></ul>
+
+        <h3>Fases da Lua:</h3>
+        <ul id="fases-lua"></ul>
+      </div>
+    </div>
+
+    <button id="download">Baixar PDF</button>
+
+    
+  </body>
+</html>

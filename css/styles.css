@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8d8da3;
+    margin: 0;
+    padding: 20px;
+}
+
+#content{
+    width: 90vw;
+    margin-left: 3vw;
+    margin-top: 0px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day, .day-header {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.day h3{
+    font-size: 1.8rem;
+}
+
+.day-header {
+    font-weight: bold;
+    background-color: #ddd;
+    font-size: 1.9rem;
+}
+
+.day {
+    background-color: #fff;
+    position: relative;
+    min-height: 150px;
+}
+
+.day.holiday {
+    background-color: #ffeb3b;
+}
+
+.day.moon-phase img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.day p {
+    margin: 5px 0;
+}
+
+#info {
+    margin-top: 20px;
+}
+
+#fases-lua{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#monthTitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
